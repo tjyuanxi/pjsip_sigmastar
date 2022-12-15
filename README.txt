@@ -942,6 +942,11 @@ Using Default Settings
         MacOS X
                 Add (among other things): '-framework CoreAudio -lpthread -lm'.
 
+    7. 修改說明：
+     (1).原pjsip 使用sdl 渲染，因为项目在sigmastar 的芯片上提供了渲染的接口，不需要sdl ，所以我将sdl 替换为sigmastar 的接口进行了渲染
+     (2).在pjsua2 基础上进行了再次封装，使集成更加方便：
+	封装代码和api: pjsua2_ddapi.cpp、pjsua2_ddapi.hpp
+	使用方法： 使用者需要继承并实现PjsuaDDApiCb 这个回调函数类，然后将对象注册到PjsuaDDApiInterface 实例中，当有消息后，会调用具体的实例，详情可参考文档《多度pjsip-sdk使用说明-1.2.docx》
 
 Appendix I: Common Problems/Frequently Asked Question (FAQ)
      _________________________________________________________________

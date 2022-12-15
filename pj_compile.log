@@ -1,0 +1,12 @@
+./configure OS=linux CC=xxx  CXX=XX --host=
+
+./configure --prefix=/home/mylinux/pj OS=linux CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ --host=arm-linux-gnueabihf CFLAGS="-I/home/mylinux/pjproject/include -I/home/mylinux/pjproject/include/sdl -I/home/mylinux/pjproject/include/sigmastar -I/home/mylinux/pjproject/include/jpeg" LDFLAGS=-L/home/mylinux/pjproject/lib LIBS="-lSDL2 -lbcg729 -lmi_vdec -lmi_sys -lmi_venc -lmi_divp -lmi_disp -lmi_panel -lmi_common -ljpeg" --with-sdl=/home/mylinux/pjproject/lib --with-openh264=/home/mylinux/pjproject/lib --with-bcg729=/home/mylinux/pjproject/lib --disable-libwebrtc --enable-shared --disable-speex-aec --enable-g711-codec --disable-l16-codec --disable-gsm-codec --enable-g722-codec --enable-g7221-codec --disable-speex-codec --disable-ffmpeg --disable-vpx --disable-ssl --enable-pjsua2
+
+
+
+
+
+./configure  OS=linux CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ --host=arm-linux-gnueabihf --disable-audio --disable-joystick --disable-video-vulkan --disable-haptic --disable-power --disable-filesystem --disable-file --disable-cpuinfo --disable-assembly --disable-ssemath --disable-mmx --disable-3dnow --disable-sse --disable-sse2 --disable-sse3 --disable-altivec --disable-oss --disable-alsatest --disable-jack --disable-jack-shared --disable-esd --disable-esdtest --disable-esd-shared --disable-pulseaudio --disable-pulseaudio-shared --disable-arts --disable-arts-shared --disable-nas --disable-nas --disable-diskaudio --disable-dummyaudio --disable-libsamplerate --disable-video-wayland --disable-video-wayland-qt-touch  --disable-video-rpi --disable-video-x11 --disable-video-vivante --disable-video-cocoa --enable-video-directfb --enable-directfb-shared --disable-video-dummy --disable-video-opengl --disable-video-opengles --disable-dbus --disable-ime --disable-fcitx --disable-directx --disable-sensor --disable-render-d3d DIRECTFB_CFLAGS="-I/home/mylinux/SSD0X/source/buildroot-2020.05/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/directfb/direct -I/home/mylinux/SSD0X/source/buildroot-2020.05/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/directfb" DIRECTFB_LIBS="-L/home/mylinux/SSD0X/source/project/image/output/rootfs/usr/lib/" DIRECTFB_REQUIRED_VERSION=1.7.7
+
+
+arm-linux-gnueabihf-gcc ./pjmedia/src/pjmedia-audiodev/Untitled-1.c -I./include -L./lib -lasound

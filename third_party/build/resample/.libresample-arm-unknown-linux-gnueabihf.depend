@@ -1,0 +1,5 @@
+output/libresample-arm-unknown-linux-gnueabihf/resamplesubs.o: ../../resample/src/resamplesubs.c \
+ /home/mylinux/SSD0X/V050/gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ ../../resample/include/resamplesubs.h config.h \
+ ../../resample/src/stddefs.h ../../resample/src/resample.h \
+ ../../resample/src/smallfilter.h ../../resample/src/largefilter.h
